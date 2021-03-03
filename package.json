@@ -15,7 +15,7 @@
     "deploy-preview": "firebase hosting:channel:deploy new-awesome-feature --expires 12h"
   },
   "dependencies": {
-    "@nuxt/content": "^1.11.1",
+    "@nuxt/content": "^1.14.0",
     "@nuxt/typescript-runtime": "^2.0.1",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/composition-api": "^0.19.0",
