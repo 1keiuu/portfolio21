@@ -1,0 +1,20 @@
+{
+  "title": "自分だけの「草」を作成して毎日の積み上げを可視化できるアプリ",
+  "productionPeriod": "2ヶ月",
+  "github_url": "",
+  "createdDate": "2021/08/01",
+  "contents": [
+    {
+      "description": "Githubの草(contribution)から着想を得ました。\n資格勉強などもどれくらい取り組んでいるかが定量的に記録出来れば便利だなと思い作成しました。",
+      "image": {
+        "url": "https://storage.googleapis.com/portfolio21-56e7e.appspot.com/products/turfgrass/1.webp"
+      }
+    },
+    {
+      "description": "使用技術\nFront: Next.js(TypeScript)\nAPI: Golang / GraphQL\nHosting: Vercel / Heroku",
+      "image": {
+        "url": "https://storage.googleapis.com/portfolio21-56e7e.appspot.com/products/turfgrass/2.webp"
+      }
+    }
+  ]
+}
