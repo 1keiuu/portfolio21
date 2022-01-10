@@ -70,7 +70,7 @@
     "nuxt-sass-resources-loader": "^2.0.5",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
-    "sass": "^1.32.5",
+    "sass": "^1.47.0",
     "sass-loader": "^10.1.1",
     "stylelint": "^9.3.0",
     "stylelint-config-standard-scss": "^1.1.0",
