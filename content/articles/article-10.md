@@ -43,11 +43,6 @@
 
 今作成しているアプリでturborepoをmonorepo構成
 
-## WebSpeedHackathonを通してフロントエンドがより好きになった
-
-
-## 
-
 
 <br/>  
 
