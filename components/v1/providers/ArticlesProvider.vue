@@ -5,7 +5,7 @@
 </template>
 <script lang="ts">
 import { defineComponent, provide } from '@vue/composition-api'
-import ArticlesStoreKey from '@/components/v1/storeKeys/ArticlesStoreKey.ts'
+import ArticlesStoreKey from '@/components/v1/storeKeys/ArticlesStoreKey'
 import ArticleStore from '~/store/articles'
 
 export default defineComponent({

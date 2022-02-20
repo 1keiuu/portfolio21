@@ -3,9 +3,10 @@
     <slot />
   </div>
 </template>
+
 <script lang="ts">
 import { defineComponent, provide } from '@vue/composition-api'
-import ProductsStoreKey from '@/components/v1/storeKeys/ProductsStoreKey.ts'
+import ProductsStoreKey from '@/components/v1/storeKeys/ProductsStoreKey'
 import ProductsStore from '~/store/products'
 
 export default defineComponent({
