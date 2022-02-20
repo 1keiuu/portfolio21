@@ -1,43 +1,96 @@
 {
-  "//$comment//": "技術スタックを先に表示する為にjsonでも上に技術・言語を持ってくる",
+  "//$comment//": [
+    "idは8桁の数値.",
+    "1xxxxxxx: front",
+    "2xxxxxxx: backend",
+    "3xxxxxxx: infra",
+    "4xxxxxxx: 技術(概念)",
+    "5xxxxxxx: etc",
+    "6xxxxxxx: 技術(ライブラリ等)"
+  ],
   "categories": [
     {
-      "id": 1,
-      "title": "Nuxt",
-      "slug": "nuxt"
+      "id": 10000001,
+      "title": "Nuxt.js",
+      "slug": "nuxtjs"
     },
     {
-      "id": 2,
+      "id": 10000002,
       "title": "firebase",
       "slug": "firebase"
     },
     {
-      "id": 3,
+      "id": 10000003,
       "title": "React Native",
       "slug": "react_native"
     },
     {
-      "id": 31,
+      "id": 10000004,
+      "title": "Next.js",
+      "slug": "nextjs"
+    },
+    {
+      "id": 20000001,
+      "title": "Node.js",
+      "slug": "nodejs"
+    },
+    {
+      "id": 30000001,
+      "title": "aws",
+      "slug": "aws"
+    },
+    {
+      "id": 30000002,
+      "title": "gcp",
+      "slug": "gcp"
+    },
+    {
+      "id": 30000003,
+      "title": "vercel",
+      "slug": "vercel"
+    },
+    {
+      "id": 30000101,
+      "title": "compute engine",
+      "slug": "compute-engine"
+    },
+    {
+      "id": 30000102,
+      "title": "cloud build",
+      "slug": "cloud-build"
+    },
+    {
+      "id": 40000001,
       "title": "パフォーマンスチューニング",
       "slug": "performance_tuning"
     },
     {
-      "id": 51,
+      "id": 40000002,
+      "title": "monorepo",
+      "slug": "monorepo"
+    },
+    {
+      "id": 50000001,
+      "title": "turborepo",
+      "slug": "turborepo"
+    },
+    {
+      "id": 60000001,
       "title": "キャリア",
       "slug": "career"
     },
     {
-      "id": 52,
+      "id": 60000002,
       "title": "成果物",
       "slug": "products"
     },
     {
-      "id": 53,
+      "id": 60000003,
       "title": "ハッカソン",
       "slug": "hackathon"
     },
     {
-      "id": 54,
+      "id": 60000004,
       "title": "振り返り",
       "slug": "look_back"
     }

@@ -5,7 +5,7 @@
     thumbnail: https://res.cloudinary.com/dcaiaukf4/image/upload/c_fit,co_rgb:333,l_text:Sawarabi%20Gothic_53_bold_start:2%25E6%259C%2588%25E7%25AC%25AC1%25E9%2580%25B1%25E3%2581%25AE%25E6%258C%25AF%25E3%2582%258A%25E8%25BF%2594%25E3%2582%258A,w_1000/v1621601547/ogp_b3ezfg.jpg
     createdDate: "2021-02-09"
     category_ids: 
-        - 54
+        - 60000004 # 振り返り
     twitter: 1keiuu
     ogpURLs: 
         - https://www.habitify.me/

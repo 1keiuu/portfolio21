@@ -5,9 +5,9 @@
     description: パフォーマンスと管理しやすさを考えて、ポートフォリオをJamstackで作り直しました。
     createdDate: "2021-01-17"
     category_ids: 
-        - 1
-        - 2
-        - 52
+        - 10000001 # Nuxt.js
+        - 10000002 # firebase
+        - 60000002 # 成果物
     twitter: 1keiuu
     ogpURLs: 
         - https://portfolio21-56e7e.web.app/products/1

@@ -5,7 +5,7 @@
     thumbnail: https://storage.googleapis.com/portfolio21-56e7e.appspot.com/ogp/files/article-8.jpg
     createdDate: "2021-02-28"
     category_ids: 
-        - 54
+        - 60000004 # 振り返り
     twitter: 1keiuu
     ogpURLs: 
         - https://www.habitify.me/

@@ -5,7 +5,7 @@
     thumbnail: https://storage.googleapis.com/portfolio21-56e7e.appspot.com/ogp/files/article-5.jpg?authuser=1
     createdDate: "2021-02-02"
     category_ids: 
-        - 31
+        - 40000001 #パフォーマンスチューニング
     twitter: 1keiuu
     ogpURLs: 
         - https://web.dev/performance-scoring/#lighthouse-6

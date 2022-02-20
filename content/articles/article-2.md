@@ -5,8 +5,8 @@
     thumbnail: https://storage.googleapis.com/portfolio21-56e7e.appspot.com/products/laff/1.webp
     createdDate: "2021-01-17"
     category_ids: 
-        - 3
-        - 53
+        - 10000003 # React Native
+        - 60000003 # ハッカソン
     twitter: 1keiuu
     ogpURLs: 
         - https://github.com/1keiuu/B_2009
