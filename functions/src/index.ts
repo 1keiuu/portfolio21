@@ -50,7 +50,7 @@ export const getOgpInfo = functions
 
           res.send({ ogp })
         } catch (e) {
-          notifySlack(e)
+          notifySlack(String(e))
           res.status(500).send({ error: e })
         }
       })

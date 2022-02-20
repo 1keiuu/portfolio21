@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "clean": "rimraf dist",
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "npm run clean & nuxt-ts generate --fail-on-error",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "npm run clean & nuxt generate --fail-on-error",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js",
     "stylelint": "stylelint '**/*.{vue,scss,css}' --ignore-path .gitignore",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.5.3",
+    "@nuxt/typescript-runtime": "latest",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/composition-api": "^0.19.0",
     "@nuxtjs/dayjs": "^1.3.0",
@@ -27,7 +28,6 @@
     "@types/axios": "^0.14.0",
     "@types/swiper": "^5.4.1",
     "@vue/composition-api": "^1.0.0-rc.1",
-    "@nuxt/typescript-runtime": "latest",
     "cloudinary-core": "^2.11.4",
     "core-js": "^3.8.3",
     "firebase": "^8.2.4",
@@ -36,7 +36,7 @@
     "install": "^0.13.0",
     "lottie-web": "^5.7.6",
     "node-html-parser": "^2.1.0",
-    "npm": "^6.14.11",
+    "npm": "^7.20.6",
     "nuxt": "^2.15.6",
     "nuxt-lazy-load": "^1.2.6",
     "nuxt-webfontloader": "^1.1.0",
@@ -48,7 +48,6 @@
     "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
-    "webpack": "^4.46.0",
     "@nuxt/types": "^2.14.12",
     "@nuxt/typescript-build": "^2.0.4",
     "@nuxtjs/eslint-config": "^5.0.0",
@@ -76,7 +75,8 @@
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-scss": "^4.1.0",
     "ts-jest": "^26.4.4",
-    "vue-jest": "^3.0.7"
+    "vue-jest": "^3.0.7",
+    "webpack": "^4.46.0"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
