@@ -51,6 +51,4 @@
 
 <br/>  
 
-<ogp-card :ogpindex="1" :ogps="ogps"></ogp-card>
-
 ## 終わりに
