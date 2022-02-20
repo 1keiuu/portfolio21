@@ -94,3 +94,5 @@ sw.*
 .runtimeconfig.json
 
 .env
+
+node_modules/
