@@ -10,6 +10,7 @@
 </template>
 
 <script lang="ts">
+import { IContentDocument } from '@nuxt/content/types/content'
 import {
   defineComponent,
   computed,
@@ -18,7 +19,6 @@ import {
   onUnmounted,
 } from '@vue/composition-api'
 import ProfilePage from '@/components/v1/templates/ProfilePage.vue'
-import { IContentDocument } from '@nuxt/content/types/content'
 import { CareerNode, PersonalInformation } from '~/@types/Home'
 
 export default defineComponent({

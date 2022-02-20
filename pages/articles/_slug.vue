@@ -4,10 +4,10 @@
 
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'
-import ArticleDetailPage from '@/components/v1/templates/ArticleDetailPage.vue'
-import { Article } from '~/@types/Article'
 import { Context } from '@nuxt/types'
 import generateArticleOgp from '../../plugins/generateArticleOgp'
+import ArticleDetailPage from '@/components/v1/templates/ArticleDetailPage.vue'
+import { Article } from '~/@types/Article'
 export type OGP = {
   title: string
   description: string
@@ -17,13 +17,13 @@ export type OGP = {
 
 export default defineComponent({
   components: { ArticleDetailPage },
-  async asyncData({ params, $content, $axios }: Context) {
+  async asyncData({ params, $content }: Context) {
     const article = await $content('articles', params.slug).fetch()
     const [prev, next]: any = await $content('articles')
       .surround(params.slug)
       .fetch()
     // FIX: typeがカオス
-    const fixedArticle = (article as unknown) as Article
+    const fixedArticle = article as unknown as Article
     const ogpInfo: OGP = {
       title: fixedArticle.title,
       description: "1keiuu's Blog",

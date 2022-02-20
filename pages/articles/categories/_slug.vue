@@ -10,9 +10,9 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from '@vue/composition-api'
 import { Context } from '@nuxt/types'
 import ArticlePage from '@/components/v1/templates/ArticlePage.vue'
-import { defineComponent } from '@vue/composition-api'
 import ArticlesProvider from '@/components/v1/providers/ArticlesProvider.vue'
 import {
   Article,
@@ -29,18 +29,19 @@ export default defineComponent({
   async asyncData({ params, $content }: Context) {
     const categories: Category[] = []
     const categoryIds: Number[] = []
-    const categoriesJson = (await $content(
-      'categories'
-    ).fetch()) as CategoryContent
+    const categoriesJson = await $content('categories').fetch<CategoryContent>()
     let title = ''
     const articles = await $content('articles')
       .sortBy('createdDate', 'desc')
       .fetch()
+    if (Array.isArray(categoriesJson)) return {}
+
     const targetCategory = categoriesJson?.categories.find(
       (category: Category) => {
         return category.slug === params.slug
       }
     )
+
     const filteredArticles = articles.filter((article: Article) => {
       let id = 0
       if (targetCategory?.id) {

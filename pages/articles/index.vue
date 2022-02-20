@@ -10,11 +10,11 @@
 </template>
 
 <script lang="ts">
+import { defineComponent, reactive } from '@vue/composition-api'
+import firebase from 'firebase'
 import { Context } from '@nuxt/types'
 import ArticlePage from '@/components/v1/templates/ArticlePage.vue'
-import { defineComponent, reactive } from '@vue/composition-api'
 import ArticlesProvider from '@/components/v1/providers/ArticlesProvider.vue'
-import firebase from 'firebase'
 import { Article, Category, CategoryContent } from '~/@types/Article'
 import { QiitaArticle, QiitaArticleAPIResponse } from '~/@types/Ogp'
 export default defineComponent({
@@ -28,9 +28,7 @@ export default defineComponent({
       .fetch()
     const categories: Category[] = []
     const categoryIds: Number[] = []
-    const categoriesJson = (await $content(
-      'categories'
-    ).fetch()) as CategoryContent
+    const categoriesJson = await $content('categories').fetch<CategoryContent>()
     let title = ''
     articles.forEach((article: Article) => {
       if (article.category_ids) {
@@ -39,20 +37,22 @@ export default defineComponent({
         })
       }
     })
-    categoriesJson.categories?.forEach((category: Category) => {
-      const count = categoryIds.filter((categoryId: Number) => {
-        return category.id === categoryId
-      }).length
-      if (count === 0) return
-      if (params.slug === category.slug) {
-        title = category.title
-      }
-      categories.push({
-        title: category.title,
-        count,
-        url: `/articles/categories/${category.slug}`,
+    if (!Array.isArray(categoriesJson)) {
+      categoriesJson.categories?.forEach((category: Category) => {
+        const count = categoryIds.filter((categoryId: Number) => {
+          return category.id === categoryId
+        }).length
+        if (count === 0) return
+        if (params.slug === category.slug) {
+          title = category.title
+        }
+        categories.push({
+          title: category.title,
+          count,
+          url: `/articles/categories/${category.slug}`,
+        })
       })
-    })
+    }
 
     const articlesFromQiitaAPI = await $axios
       .get('https://qiita.com/api/v2/authenticated_user/items', {
