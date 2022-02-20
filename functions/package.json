@@ -15,7 +15,6 @@
   "main": "lib/index.js",
   "dependencies": {
     "@firebase/functions-types": "^0.4.0",
-    "canvas": "^2.6.1",
     "cheerio": "^1.0.0-rc.5",
     "cloudinary-core": "^2.11.4",
     "dotenv": "^8.2.0",
