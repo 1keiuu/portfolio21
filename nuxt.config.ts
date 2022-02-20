@@ -1,4 +1,4 @@
-import { value ArticleContent } from './@types/Article'
+import { ArticleContent } from './@types/Article'
 
 const envPath = 'config/.env'
 require('dotenv').config({ path: envPath })

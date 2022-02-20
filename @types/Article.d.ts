@@ -1,6 +1,6 @@
 import { IContentDocument } from '@nuxt/content/types/content'
 
-export type Article = {
+declare type Article = {
   id: Number
   thumbnail: string
   title: string
@@ -12,15 +12,15 @@ export type Article = {
   category_ids: Number[]
 }
 
-export type ArticleContent = IContentDocument & {}
+declare type ArticleContent = IContentDocument & {}
 
-export type ArticleCategoryItem = {
+declare type ArticleCategoryItem = {
   title: string
   count: number
   url: string
 }
 
-export type Category = {
+declare type Category = {
   id?: number
   title: string
   slug?: string
@@ -28,6 +28,6 @@ export type Category = {
   url?: string
 }
 
-export type CategoryContent = IContentDocument & {
+declare type CategoryContent = IContentDocument & {
   categories: Category[]
 }
