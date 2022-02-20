@@ -10,6 +10,8 @@
         - 30000101 # compute engine
         - 30000102 # cloud build
     twitter: 1keiuu
+    ogpURLs: 
+        - 
     ogps: 
         - {title:"", description:"", image:""}
 ---

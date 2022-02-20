@@ -1,4 +1,4 @@
-import { ArticleContent } from './@types/Article'
+import { value ArticleContent } from './@types/Article'
 
 const envPath = 'config/.env'
 require('dotenv').config({ path: envPath })
@@ -165,7 +165,7 @@ export default {
         document.categories = res
 
         // ogpデータの取得、設定
-        for (let i = 0; i < document.ogpURLs.length; i++) {
+        for (let i = 0; i < document.ogpURLs?.length; i++) {
           const { OGPHook } = require(path.resolve(
             __dirname,
             './nuxt_content/hooks/OGPHook.ts'

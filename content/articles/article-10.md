@@ -11,6 +11,8 @@
         - 30000102 # cloud build
         - 40000002 # monorepo
     twitter: 1keiuu
+    ogpURLs: 
+        - 
     ogps: 
         - {title:"", description:"", image:""}
 ---
