@@ -81,9 +81,9 @@
 </template>
 
 <script lang="ts">
+import SwiperClass from 'swiper'
 import { defineComponent, PropType, ref } from '@vue/composition-api'
 import ThumbnailPagination from '@/components/v1/molecules/ThumbnailPagination.vue'
-import SwiperClass from 'swiper'
 import { SwiperDOM } from '~/@types/Swiper'
 import { Product } from '~/@types/Product'
 export default defineComponent({
@@ -107,7 +107,7 @@ export default defineComponent({
       activeIndex.value = i
     }
     const onSlideChange = (e: SwiperClass) => {
-      changeSlideIndex(e.activeIndex)
+      changeSlideIndex(swiperRef.value?.$swiper.activeIndex)
     }
     const changeCurrentSlide = (i: number) => {
       swiperRef.value!.$swiper.slideTo(i)
