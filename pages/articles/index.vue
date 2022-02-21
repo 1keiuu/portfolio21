@@ -70,7 +70,7 @@ export default defineComponent({
 
     // NOTE: データが既にDBに存在しているものについてもpostしている
     const createQiitaRecordToDB = async () => {
-      await articlesFromQiitaAPI.forEach(
+      await articlesFromQiitaAPI?.forEach(
         (latestQiitaArticle: QiitaArticleAPIResponse) => {
           $axios
             .post(

@@ -18,37 +18,38 @@ export type OGP = {
 export default defineComponent({
   components: { ArticleDetailPage },
   async asyncData({ params, $content }: Context) {
-    const article = await $content('articles', params.slug).fetch()
+    const res = await $content('articles', params.slug).fetch<Article>()
+    const article = Array.isArray(res) ? res[0] : res
     const [prev, next]: any = await $content('articles')
       .surround(params.slug)
       .fetch()
-    // FIX: typeがカオス
-    const fixedArticle = article as unknown as Article
+    // FIXME: typeがカオス
     const ogpInfo: OGP = {
-      title: fixedArticle.title,
+      title: article.title,
       description: "1keiuu's Blog",
       url: 'https://portfolio21-56e7e.web.app/articles',
       image: '',
     }
+
     // await $axios
     //   .post(
     //     'https://us-central1-portfolio21-56e7e.cloudfunctions.net/createOgpImageAndSave',
     //     {
-    //       title: fixedArticle.title,
-    //       slug: fixedArticle.slug,
+    //       title: article.title,
+    //       slug: article.slug,
     //       name: '@1keiuu',
     //     }
     //   )
     //   .then((res) => {
     //     console.log(res.data)
     //     ogpInfo.image = res.data.url
-    //     ogpInfo.description = fixedArticle.description
-    //     ogpInfo.title = fixedArticle.title
+    //     ogpInfo.description = article.description
+    //     ogpInfo.title = article.title
     //   })
     //   .catch((e) => console.error(e))
-    ogpInfo.image = generateArticleOgp(fixedArticle.title)
-    ogpInfo.description = fixedArticle.description
-    ogpInfo.title = fixedArticle.title
+    ogpInfo.image = generateArticleOgp(article.title)
+    ogpInfo.description = article.description
+    ogpInfo.title = article.title
 
     return { article, prev, next, ogpInfo }
   },
