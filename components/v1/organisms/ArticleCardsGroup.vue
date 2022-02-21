@@ -26,10 +26,7 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const articlesForDisplay = props.articles.slice(
-      1,
-      props.articles.length - 1
-    )
+    const articlesForDisplay = props.articles.slice(1, 7)
 
     return { articlesForDisplay }
   },

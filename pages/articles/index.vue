@@ -25,7 +25,6 @@ export default defineComponent({
   async asyncData({ params, $content, $axios }: Context) {
     const articles = await $content('articles')
       .sortBy('createdDate', 'desc')
-      .limit(8)
       .fetch()
     const categories: Category[] = []
     const categoryIds: Number[] = []
