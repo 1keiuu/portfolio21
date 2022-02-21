@@ -152,7 +152,7 @@ export default {
       if (document.extension === '.md') {
         // reading timeの設定
         const { time } = require('reading-time')(document.text, {
-          wordsPerMinute: 700,
+          wordsPerMinute: 7000,
         })
         document.readingTime = time
         // categoryの取得、設定
