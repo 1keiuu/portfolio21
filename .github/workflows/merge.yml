@@ -16,10 +16,10 @@ jobs:
         with:
           node-version: "16"
       - name: Create dot env file
-      - shell: bash
+        shell: bash
         run: |
-          touch .env
-          echo "GCP_API_KEY=${{ secrets.GCP_API_KEY }}" >> .env
+            touch .env
+            echo "GCP_API_KEY=${{ secrets.GCP_API_KEY }}" >> .env
       - name: Install dependencies
         run: npm ci
       # - name: Run test
