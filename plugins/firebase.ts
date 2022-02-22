@@ -2,7 +2,7 @@ import firebase from 'firebase'
 
 if (!firebase.apps.length) {
   firebase.initializeApp({
-    apiKey: 'AIzaSyB4Ya-XYDP7glHrvhhcQ-vP5BvROdXS3ds',
+    apiKey: process.env.GCP_API_KEY,
     authDomain: 'portfolio21-56e7e.firebaseapp.com',
     projectId: 'portfolio21-56e7e',
     storageBucket: 'portfolio21-56e7e.appspot.com',
