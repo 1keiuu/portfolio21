@@ -21,8 +21,10 @@ export default defineComponent({
     const res = await $content('articles', params.slug).fetch<Article>()
     const article = Array.isArray(res) ? res[0] : res
     const [prev, next]: any = await $content('articles')
-      .surround(params.slug)
+      .surround(article.slug)
+      .sortBy('createdDate', 'desc')
       .fetch()
+
     // FIXME: typeがカオス
     const ogpInfo: OGP = {
       title: article.title,
