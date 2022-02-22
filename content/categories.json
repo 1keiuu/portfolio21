@@ -36,17 +36,17 @@
     },
     {
       "id": 30000001,
-      "title": "aws",
+      "title": "AWS",
       "slug": "aws"
     },
     {
       "id": 30000002,
-      "title": "gcp",
+      "title": "GCP",
       "slug": "gcp"
     },
     {
       "id": 30000003,
-      "title": "vercel",
+      "title": "Vercel",
       "slug": "vercel"
     },
     {
