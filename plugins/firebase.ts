@@ -1,5 +1,4 @@
 import firebase from 'firebase'
-import 'firebase/analytics'
 
 if (!firebase.apps.length) {
   firebase.initializeApp({
