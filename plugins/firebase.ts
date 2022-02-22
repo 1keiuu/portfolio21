@@ -11,7 +11,9 @@ if (!firebase.apps.length) {
     appId: '1:515187296876:web:6dc12de78358be1c81a649',
     measurementId: 'G-JGPW8TVGZP',
   })
-  firebase.analytics()
+  if (process.browser) {
+    firebase.analytics()
+  }
 }
 
 export default firebase
