@@ -51,13 +51,18 @@
     },
     {
       "id": 30000101,
-      "title": "compute engine",
+      "title": "Compute Engine",
       "slug": "compute-engine"
     },
     {
       "id": 30000102,
-      "title": "cloud build",
+      "title": "Cloud Build",
       "slug": "cloud-build"
+    },
+    {
+      "id": 30000103,
+      "title": "Secret Manager",
+      "slug": "secret-manager"
     },
     {
       "id": 40000001,
