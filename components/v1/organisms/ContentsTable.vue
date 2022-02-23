@@ -12,7 +12,7 @@
           <NuxtLink
             v-if="link.depth == 2"
             v-scroll-to="{
-              el: `#${link.text}`,
+              el: `#${link.id}`,
               onStart: changeActiveLink,
             }"
             to="#"
