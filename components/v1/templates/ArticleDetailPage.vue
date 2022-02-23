@@ -137,6 +137,7 @@ export default defineComponent({
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        min-width: fit-content;
 
         p {
           margin-left: 8px;

@@ -26,7 +26,7 @@ export default defineComponent({
 .chip__link {
   text-decoration: none;
   margin-right: 8px;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
 
   .chip {
     display: flex;
