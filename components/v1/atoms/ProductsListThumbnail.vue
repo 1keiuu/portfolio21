@@ -33,7 +33,7 @@ export default defineComponent({
   opacity: 1;
   width: 100%;
   height: 100%;
-  filter: grayscale(100%) brightness(60%);
+  filter: grayscale(100%) brightness(80%);
   transition: 0.7s;
   cursor: pointer;
   img {
