@@ -70,7 +70,7 @@ export default defineComponent({
 
   .article-card__inner {
     text-decoration: none;
-    box-shadow: 0 0 20px rgba(89, 89, 89, 0.072);
+    box-shadow: 0 0 20px rgba(89, 89, 89, 0.16);
     display: block;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;

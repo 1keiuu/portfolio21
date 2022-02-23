@@ -30,7 +30,7 @@ export default defineComponent({
   width: 100%;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0 0 20px rgba(89, 89, 89, 0.072);
+  box-shadow: 0 0 20px rgba(89, 89, 89, 0.16);
   &:hover {
     .inner {
       .title {
