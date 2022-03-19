@@ -6,4 +6,4 @@ Ikkei Harashima's portfolio 2021
   
 <br/>
 
-**summarized in https://1k-cove.com/articles/1**
+**summarized in [this page](https://1k-cove.com/articles/1)**
