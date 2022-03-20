@@ -66,7 +66,7 @@ export default defineComponent({
       .image {
         height: 150px;
         width: 150px;
-        object-fit: cover;
+        object-fit: contain;
         margin: 0;
       }
 

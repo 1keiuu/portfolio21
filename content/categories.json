@@ -22,12 +22,22 @@
     {
       "id": 10000003,
       "title": "React Native",
-      "slug": "react_native"
+      "slug": "react-native"
     },
     {
       "id": 10000004,
       "title": "Next.js",
       "slug": "nextjs"
+    },
+    {
+      "id": 10000005,
+      "title": "React.js",
+      "slug": "reactjs"
+    },
+    {
+      "id": 10000006,
+      "title": "Redux",
+      "slug": "redux"
     },
     {
       "id": 20000001,
@@ -67,12 +77,17 @@
     {
       "id": 40000001,
       "title": "パフォーマンスチューニング",
-      "slug": "performance_tuning"
+      "slug": "performance-tuning"
     },
     {
       "id": 40000002,
       "title": "monorepo",
       "slug": "monorepo"
+    },
+    {
+      "id": 40000003,
+      "title": "Server Side Rendering",
+      "slug": "server-side-rendering"
     },
     {
       "id": 50000001,
@@ -97,7 +112,7 @@
     {
       "id": 60000004,
       "title": "振り返り",
-      "slug": "look_back"
+      "slug": "look-back"
     }
   ]
 }
