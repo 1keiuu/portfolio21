@@ -76,7 +76,7 @@
     "stylelint-scss": "^4.1.0",
     "ts-jest": "^26.4.4",
     "vue-jest": "^3.0.7",
-    "webpack": "^4.46.0"
+    "webpack": "^5.71.0"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
