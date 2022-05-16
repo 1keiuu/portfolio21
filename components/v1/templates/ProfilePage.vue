@@ -86,6 +86,7 @@ export default defineComponent({
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      max-width: 1400px;
       .top-view__inner {
         width: 75%;
         height: 100%;
